@@ -1,0 +1,9 @@
+server:
+  port:9080
+
+eureka:
+  cleint:
+    registerWithEureka: false
+    fetchRegistry: false
+
+
