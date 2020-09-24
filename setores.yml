@@ -1,6 +1,5 @@
 server:
-  port:9093
-  wait-time-in-ms-when-sync-empty:3000000
+  port: 9093
 eureka:
   instance:
     hostname: localhost

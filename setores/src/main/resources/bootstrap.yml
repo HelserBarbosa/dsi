@@ -1,6 +1,6 @@
 spring:
   application:
-    name:setores
+    name: setores
   cloud:
     config:
-      uri:http://localhost:9080
+      uri: http://localhost:9080
