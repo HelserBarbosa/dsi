@@ -17,7 +17,8 @@ public class PessoaService {
 	}
 
 	public Pessoa getById(Long id) {
-		return repository.getOne(id);
+		
+		return repository.findById(id).orElseThrow(() -> new RuntimeException());
 	}
 
 	public Pessoa createOne() {
