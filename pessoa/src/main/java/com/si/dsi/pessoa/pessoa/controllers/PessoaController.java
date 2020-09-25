@@ -30,7 +30,7 @@ public class PessoaController {
 		return new ResponseEntity<Pessoa>(service.saveOne(pessoa), HttpStatus.OK);
 	}
 
-	@PostMapping("{teste}")
+	@GetMapping("teste")
 	public ResponseEntity<Pessoa> createOne() {
 		return new ResponseEntity<Pessoa>(service.createOne(), HttpStatus.OK);
 	}
