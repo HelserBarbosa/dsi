@@ -17,7 +17,7 @@ zuul:
   routes:
     pessoa:
       path: /services/pessoa/**
-      url: http://localhost:9091
+      serviceId: pessoa
     produto:
       path: /services/produto/**
       url: http://localhost:9092
