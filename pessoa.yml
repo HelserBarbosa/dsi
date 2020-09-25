@@ -12,3 +12,13 @@ eureka:
      defaultZone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
   server:
     wait-time-in-ms-when-sync-empty: 3000
+
+spring:
+  h2:
+   console:
+     enabled: true
+     path: /h2
+  jpa:
+    hibernate:
+      ddl-auto: create;
+
