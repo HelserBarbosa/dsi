@@ -20,8 +20,8 @@ zuul:
       serviceId: pessoa
     produto:
       path: /services/produto/**
-      url: http://localhost:9092
+      serviceId: produto
     setores:
       path: /services/setores/**
-      url: http://localhost:9093
+      serviceId: setores
     
