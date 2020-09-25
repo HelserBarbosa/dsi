@@ -19,7 +19,7 @@ import com.si.dsi.pessoa.service.PessoaService;
 
 
 @RestController
-@RequestMapping("/usuario")
+@RequestMapping("/usuarios")
 public class PessoaController {
 	
 	@Autowired
