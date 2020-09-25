@@ -17,11 +17,11 @@ zuul:
   routes:
     pessoa:
       path: /services/pessoa/**
-      url: http://localhost:9091
+      uri: http://localhost:9091
     produto:
       path: /services/produto/**
-      url: http://localhost:9092
+      uri: http://localhost:9092
     setores:
       path: /services/setores/**
-      url: http://localhost:9093
+      uri: http://localhost:9093
     

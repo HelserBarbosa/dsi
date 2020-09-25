@@ -1,11 +1,20 @@
-package dto;
+package com.si.dsi.pessoa.entity;
 
 import java.io.Serializable;
 
-public class PessoaDTO implements Serializable {
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
+public class Pessoa implements Serializable {
 	
-	private static final long serialVersionUID = 3774091518986982074L;
 	
+	private static final long serialVersionUID = 3834075501275856042L;
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Integer id;
 	private String nome;
 	private String cpf;
@@ -33,5 +42,6 @@ public class PessoaDTO implements Serializable {
 	public void setCpf(String cpf) {
 		this.cpf = cpf;
 	}
+	
 
 }

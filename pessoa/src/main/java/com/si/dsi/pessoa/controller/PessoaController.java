@@ -1,4 +1,4 @@
-package com.si.dsi.pessoa.pessoa.controller;
+package com.si.dsi.pessoa.controller;
 
 import java.util.List;
 
@@ -14,11 +14,12 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import dto.PessoaDTO;
-import service.PessoaService;
+import com.si.dsi.pessoa.dto.PessoaDTO;
+import com.si.dsi.pessoa.service.PessoaService;
+
 
 @RestController
-@RequestMapping()
+@RequestMapping("/cs")
 public class PessoaController {
 	
 	@Autowired
@@ -29,7 +30,7 @@ public class PessoaController {
 		return ResponseEntity.ok(service.getAll());
 	}
 	
-	@GetMapping
+	@GetMapping("/{id}")
 	public ResponseEntity<PessoaDTO> getById(@PathVariable Integer id) {
 		return ResponseEntity.ok(service.getById(id));
 	}

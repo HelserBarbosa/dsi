@@ -1,10 +1,10 @@
-package mapper;
+package com.si.dsi.pessoa.mapper;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
-import dto.PessoaDTO;
-import entity.Pessoa;
+import com.si.dsi.pessoa.dto.PessoaDTO;
+import com.si.dsi.pessoa.entity.Pessoa;
 
 public class PessoaMapper {
 	

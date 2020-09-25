@@ -1,4 +1,4 @@
-package service;
+package com.si.dsi.pessoa.service;
 
 import java.io.Serializable;
 import java.util.List;
@@ -7,10 +7,10 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import dto.PessoaDTO;
-import entity.Pessoa;
-import mapper.PessoaMapper;
-import repository.PessoaRepository;
+import com.si.dsi.pessoa.dto.PessoaDTO;
+import com.si.dsi.pessoa.entity.Pessoa;
+import com.si.dsi.pessoa.mapper.PessoaMapper;
+import com.si.dsi.pessoa.repository.PessoaRepository;
 
 @Service
 public class PessoaService implements Serializable {

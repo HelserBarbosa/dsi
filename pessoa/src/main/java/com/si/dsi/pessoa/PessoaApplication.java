@@ -1,4 +1,4 @@
-package com.si.dsi.pessoa.pessoa;
+package com.si.dsi.pessoa;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
